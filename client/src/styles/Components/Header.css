@@ -1,0 +1,15 @@
+.app-header {
+  background-color: #222;
+  padding: 1rem 0;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid #00d8ff; /* A bit of a Tron feel */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
