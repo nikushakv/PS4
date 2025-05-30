@@ -103,3 +103,4 @@ export interface S2C_ErrorPayload {
   message: string;
   code?: number; // Optional error code
 }
+

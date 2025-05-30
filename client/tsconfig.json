@@ -1,37 +1,30 @@
 {
   "compilerOptions": {
-    "target": "ESNext", // "ES2020" is also a good modern target
+    "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": true, // Usually false for a strict TS project, but okay if you need it
+    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "bundler", // "bundler" is often preferred with Vite
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-
-    // --- PATH ALIAS CONFIGURATION ---
-    "baseUrl": "./src", // Or just "src". "./src" is more explicit.
+    "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"], // Points to src/components/*
-      "@hooks/*": ["hooks/*"],           // Points to src/hooks/*
-      "@services/*": ["services/*"],       // Points to src/services/*
-      "@types/*": ["types/*"],             // Points to src/types/*
-      "@utils/*": ["utils/*"],             // Points to src/utils/* (your existing one)
-      "@styles/*": ["styles/*"]            // Points to src/styles/*
-      // NO trailing comma after the last alias
+      "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"],
+      "@services/*": ["services/*"],
+      "@types/*": ["types/*"],
+      "@utils/*": ["utils/*"],
+      "@styles/*": ["styles/*"]
     },
-    // --- END PATH ALIAS CONFIGURATION ---
-
     "types": ["vite/client", "node"]
   },
-  "include": ["src", "vite.config.ts"], // Include vite.config.ts
-  // "references": [{ "path": "./tsconfig.node.json" }] // Add this if Vite generated it for you
-  // If you have react-app-vite-env.d.ts, include that name instead of vite-env.d.ts if needed
-  // but usually Vite uses vite-env.d.ts
+  "include": ["src", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
 }
